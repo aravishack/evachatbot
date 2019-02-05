@@ -1,0 +1,245 @@
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(../fonts/MaterialIcons-Regular.woff2) format("woff2"),
+    url(../fonts/MaterialIcons-Regular.woff) format("woff"),
+    url(../fonts/MaterialIcons-Regular.ttf) format("truetype");
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Varela Round", sans-serif;
+  background: #c2e59c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #64b3f4,
+    #c2e59c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #64b3f4,
+    #c2e59c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  overflow: hidden;
+  background-size: 100% auto;
+  position: relative;
+}
+header.header {
+  padding-top: 40px;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+
+.header .header-logo a {
+  font-size: 40px;
+  text-decoration: none;
+  color: #000;
+}
+
+.header .header-logotag {
+  font-size: 20px;
+}
+footer.footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+section.chatsection,
+section#chatarea {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.chatsection-start a {
+  color: #000;
+  text-decoration: none;
+  padding: 15px;
+  display: inline-block;
+}
+.chatsection-start a:before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -23px;
+  top: -4px;
+  bottom: auto;
+  border: 20px solid;
+  border-color: #666 transparent transparent transparent;
+}
+.chatsection-start a:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -13px;
+  top: 0px;
+  bottom: auto;
+  border: 15px solid;
+  border-color: lightyellow transparent transparent transparent;
+}
+
+.chatsection-start {
+  /* margin: 40px; */
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+  background-color: lightyellow;
+  border: 4px solid #666;
+}
+.chatarea-wrap {
+  max-width: 350px;
+  background: #fff;
+  border-radius: 5px;
+  padding-bottom: 25px;
+  height: 400px;
+  position: relative;
+}
+.chatarea-wrap {
+  margin: 20px auto 0;
+}
+
+.chatarea-header span {
+  padding: 10px 0;
+  display: block;
+  color: green;
+  font-weight: bold;
+}
+.chatarea-message {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #000;
+}
+
+input#input-msg {
+  border-top: 1px solid #e0e3f0;
+  text-align: left;
+  padding: 15px 0px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  width: 80%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+i.material-icons {
+  color: green;
+  vertical-align: middle;
+}
+#chatsection-end-conv,
+#chatarea {
+  display: none;
+}
+.input-msg {
+  text-align: right;
+  padding: 10px;
+  background: #aa3939;
+  color: #fff;
+  font-size: 12px;
+  width: 80%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.resp-msg {
+  text-align: left;
+  padding: 10px;
+  background: #e0e3f0;
+  color: #000;
+  font-size: 12px;
+  width: 80%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.input-msg:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 15px solid #aa3939;
+  border-left: 15px solid transparent;
+  position: absolute;
+  bottom: -12px;
+  right: 0px;
+}
+
+.resp-msg:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 15px solid #e0e3f0;
+  border-right: 15px solid transparent;
+  position: absolute;
+  bottom: -12px;
+  left: 0px;
+}
+span.avatar {
+  width: 30px;
+  height: 30px;
+  background: #aa3939;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 5px;
+  font-size: 10px;
+  line-height: 30px;
+  color: #fff;
+}
+.input-msg-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+.res-msg-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+input#input-msg.disabled + a i {
+  opacity: 0.5;
+  cursor: auto;
+}
+div#chatarea-holder {
+  max-height: 310px;
+  overflow-x: auto;
+}
